@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maracanã Pizza</title>
+    <link rel="stylesheet" href="_css/stilo.css">
+    <script src="javascript/script.js" defer></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Nome da pizzaria -->
+        <header class="app-header">
+            <h1>A Melhor <strong>Pizza</strong> de Cabo Frio</h1>
+            <p>Bem vindo a Maracanã Pizza.🍕<br>Veja nossas delícias <br>e faça seu pedido! </p>
+            <img src="_images/logo.png" alt="logo"/>
+          
+        </header>
+
+        <!-- Promoções -->
+        <section class="promo-section">
+            
+            <div class="promo-options">
+                <button class="promo-button" data-promo="Pizza Grande (35cm) - R$ 39,99">
+                    <img src="_images/promo1.png" alt="Pizza Grande">
+                    <p>Pizza Grande R$45,00</p>
+                </button><br>
+                <button class="promo-button" data-promo="Mini Rodízio (2x 35cm + 1 Doce) - R$ 89,00">
+                    <img src="_images/promo2.png" alt="Mini Rodízio">
+                    <p>Mini Rodizio  R$95,00</p>
+                </button><br>
+                <button class="promo-button" data-promo="Combo Família (2x 35cm) - R$ 74,99">
+                    <img src="_images/promo3.png" alt="Combo Família">
+                    <p>Combo + Refri R$90,00</p>
+                </button><br>
+                <button class="promo-button" data-promo="Pizza Família (35cm + Refri 2L) - R$ 49,90">
+                    <img src="_images/promo4.png" alt="Pizza + Refri">
+                    <p>Pizza + Refri R$55,00</p>
+                </button>
+            </div>
+        </section>
+
+        <!-- Escolha de Sabores -->
+        <section class="flavor-section hidden">
+            <h2>Pizza 8 fatias (35cm)</h2>
+            <div class="pizza-preview">
+                <div class="pizza-half">
+                    <img id="left-half" src="_images/default.png" alt="Sabor 1">
+                </div>
+                <div class="pizza-half">
+                    <img id="right-half" src="_images/default.png" alt="Sabor 2">
+                </div>
+            </div>
+            <div class="flavors-list">
+                <div class="flavor">
+                    <label for="flavor1">Sabor 1:</label>
+                    <select id="flavor1">
+                        <option value="" data-image="default.png">Selecione</option>
+                        <option value="Mussarela" data-image="mussarela.png">Mussarela</option>
+                        <option value="Calabresa" data-image="calabresa.png">Calabresa</option>
+                        <option value="Frango com Catupiry" data-image="frango.png">Frango com Catupiry</option>
+                        <option value="Presunto" data-image="mussarela.png">Mussarela</option>
+                        <option value="Marguerita" data-image="mussarela.png">Presunto</option>
+                        <option value="Moda da Casa" data-image="mussarela.png">Moda da Casa</option>
+                        <option value="3 Porquinhos" data-image="mussarela.png">3 Porquinhos</option>
+                        <option value="calabresa do Chef" data-image="mussarela.png">calabresa do Chef</option>
+                        <option value="Frango do Chef" data-image="mussarela.png">Frango do Chef</option>
+                        <option value="Marguerita do Chef" data-image="mussarela.png">Marguerita do Chef</option>
+                        <option value="Portuguesa" data-image="mussarela.png">Portuguesa</option>
+                        <option value="Alho" data-image="Alho.png">Mussarela</option>
+                        <option value="4 Queijos" data-image="mussarela.png">4 Queijos</option>
+                        <option value="5 Queijos" data-image="mussarela.png">5 Queijos</option>
+                        <option value="Bacon com Ovos" data-image="mussarela.png">Bacon com Ovos</option>
+                        <option value="Presunto do Chef" data-image="mussarela.png">Presunto do Chef</option>
+                        
+                    </select>
+                </div>
+                <div class="flavor">
+                    <label for="flavor2">Sabor 2:</label>
+                    <select id="flavor2">
+                        <option value="" data-image="default.png">Selecione</option>
+                        <option value="Mussarela" data-image="mussarela.png">Mussarela</option>
+                        <option value="Calabresa" data-image="calabresa.png">Calabresa</option>
+                        <option value="Frango com Catupiry" data-image="frango.png">Frango com Catupiry</option>
+                        <option value="Presunto" data-image="mussarela.png">Mussarela</option>
+                        <option value="Marguerita" data-image="mussarela.png">Presunto</option>
+                        <option value="Moda da Casa" data-image="mussarela.png">Moda da Casa</option>
+                        <option value="3 Porquinhos" data-image="mussarela.png">3 Porquinhos</option>
+                        <option value="calabresa do Chef" data-image="mussarela.png">calabresa do Chef</option>
+                        <option value="Frango do Chef" data-image="mussarela.png">Frango do Chef</option>
+                        <option value="Marguerita do Chef" data-image="mussarela.png">Marguerita do Chef</option>
+                        <option value="Portuguesa" data-image="mussarela.png">Portuguesa</option>
+                        <option value="Alho" data-image="Alho.png">Mussarela</option>
+                        <option value="4 Queijos" data-image="mussarela.png">4 Queijos</option>
+                        <option value="5 Queijos" data-image="mussarela.png">5 Queijos</option>
+                        <option value="Bacon com Ovos" data-image="mussarela.png">Bacon com Ovos</option>
+                        <option value="Presunto do Chef" data-image="mussarela.png">Presunto do Chef</option>
+                    </select>
+                </div>
+            </div>
+            <div class="cardapio">
+           <img src="_images/cardapio.jpg">
+        </div>
+        </section>
+    </div>
+</body>
+</html>
+
+          
+        
+            <button id="next-to-checkout">Continuar</button>
+        </section>
+
+        <!-- Endereço e Pagamento -->
+        <section class="checkout-section hidden">
+            <h2>Confirme seu Pedido</h2>
+
+            <!-- Endereço -->
+            <div class="address-section">
+                <h3>Endereço</h3>
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" placeholder="Digite seu CEP">
+                <button id="search-address">Buscar Endereço</button>
+                <label for="number">Número:</label>
+                <input type="text" id="number" placeholder="Número da casa" required>
+                <label for="reference">Ponto de Referência (opcional):</label>
+                <input type="text" id="reference" placeholder="Ponto de referência">
+                <textarea id="manual-address" placeholder="Digite seu endereço completo"></textarea>
+                <button id="use-location">Usar Minha Localização</button>
+            </div>
+
+            <!-- Pagamento -->
+            <!-- Pagamento -->
+<div class="payment-section">
+    <h3>Forma de Pagamento</h3>
+    <select id="payment-method">
+        <option value="Pix">Pix</option> <!-- Pix agora é a primeira opção -->
+        <option value="Dinheiro">Dinheiro</option>
+        <option value="Cartão de Crédito">Cartão de Crédito</option>
+        <option value="Cartão de Débito">Cartão de Débito</option>
+    </select>
+    <div id="change-section" class="hidden">
+        <label for="change">Troco para quanto?</label>
+        <input type="text" id="change" placeholder="Valor para Troco">
+    </div>
+</div>
+
+
+            <!-- Resumo do Pedido -->
+            <div class="order-summary">
+                <h3>Resumo do Pedido</h3>
+                <p id="order-details"></p>
+                <p id="order-total"></p>
+            </div>
+
+            <!-- Finalizar Pedido -->
+            <button id="finalize-order">Finalizar Pedido</button>
+        </section>
+    </div>
+</body>
+</html>
